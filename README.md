@@ -39,8 +39,9 @@ Para quem não conhece o jogo original, consulte a [Wikipedia] (https://en.wikip
 
 ## Documentação
 
-![Itens Atendidos na avaliação](doc/river-raid.pdf)
+![Itens Atendidos na avaliação](doc/river-raid.jpg)
 
+[Itens Atendidos na avaliação](doc/river-raid.jpg)
 
 ## Dependências
 
