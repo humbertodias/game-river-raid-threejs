@@ -41,7 +41,7 @@ Para quem não conhece o jogo original, consulte a [Wikipedia] (https://en.wikip
 
 ![Itens Atendidos na avaliação](doc/river-raid.jpg)
 
-[Itens Atendidos na avaliação](doc/river-raid.jpg)
+[Itens Atendidos na avaliação](doc/river-raid.pdf)
 
 ## Dependências
 
