@@ -4,6 +4,8 @@ Desenvolver um jogo em 3D, baseado no clássico RiverRaid de Atari.
 
 **ENTREGA: 01 Dezembro de 2016**
 
+[Itens Atendidos na avaliação](doc/river-raid.pdf)
+
 
 ## REQUISITOS
 
