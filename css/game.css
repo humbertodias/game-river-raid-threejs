@@ -189,3 +189,14 @@ body {
 		letter-spacing: 0.65em;
 	}
 }
+
+
+.floating-menu {
+font-family: sans-serif;
+padding-right: 2px;
+z-index: 100;
+position: fixed;
+top: 0px;
+right: 0px;
+color: white;
+}
