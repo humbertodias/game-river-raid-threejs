@@ -478,6 +478,8 @@ EnnemiesHolder.prototype.spawnEnnemies = function(){
     ennemy.distance = game.seaRadius + game.planeDefaultHeight + (-1 + Math.random() * 2) * (game.planeAmpHeight-20);
     ennemy.mesh.position.y = -game.seaRadius + Math.sin(ennemy.angle)*ennemy.distance;
     ennemy.mesh.position.x = Math.cos(ennemy.angle)*ennemy.distance;
+    // Z movement
+    ennemy.mesh.position.z += (0.5 - Math.random())*50;
 
     this.mesh.add(ennemy.mesh);
     this.ennemiesInUse.push(ennemy);
@@ -613,6 +615,8 @@ CoinsHolder.prototype.spawnCoins = function(){
     coin.distance = d + Math.cos(i*.5)*amplitude;
     coin.mesh.position.y = -game.seaRadius + Math.sin(coin.angle)*coin.distance;
     coin.mesh.position.x = Math.cos(coin.angle)*coin.distance;
+    // Z movement
+    coin.mesh.position.z += (0.5 - Math.random())*50;
   }
 }
 
@@ -811,6 +815,8 @@ function updatePlane(){
   game.planeSpeed = normalize(mousePos.x,-.5,.5,game.planeMinSpeed, game.planeMaxSpeed);
   var targetY = normalize(mousePos.y,-.75,.75,game.planeDefaultHeight-game.planeAmpHeight, game.planeDefaultHeight+game.planeAmpHeight);
   var targetX = normalize(mousePos.x,-1,1,-game.planeAmpWidth*.7, -game.planeAmpWidth);
+  // Z movement
+  var targetZ = normalize(mousePos.x,-1,1,-game.planeAmpWidth, game.planeAmpWidth);
 
   game.planeCollisionDisplacementX += game.planeCollisionSpeedX;
   targetX += game.planeCollisionDisplacementX;
@@ -820,6 +826,8 @@ function updatePlane(){
 
   airplane.mesh.position.y += (targetY-airplane.mesh.position.y)*deltaTime*game.planeMoveSensivity;
   airplane.mesh.position.x += (targetX-airplane.mesh.position.x)*deltaTime*game.planeMoveSensivity;
+  // Z movement
+  airplane.mesh.position.z += (targetZ-airplane.mesh.position.z)*deltaTime*game.planeMoveSensivity;
 
   airplane.mesh.rotation.z = (targetY-airplane.mesh.position.y)*deltaTime*game.planeRotXSensivity;
   airplane.mesh.rotation.x = (airplane.mesh.position.y-targetY)*deltaTime*game.planeRotZSensivity;
