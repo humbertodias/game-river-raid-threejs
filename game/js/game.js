@@ -177,7 +177,15 @@ audioLoader.load( hitSoundB64, function( buffer ) {
 });
 
 engineSound = new THREE.PositionalAudio( listener );
-// audioLoader.load( 'sound/engine.wav', function( buffer ) {
+
+// audioLoader.load( 'sound/engine.au', function( buffer ) {
+//   engineSound.setBuffer( buffer );
+//   engineSound.setRefDistance( 20 );
+//   engineSound.setLoop(true)
+//   engineSound.play();
+// });
+
+
 audioLoader.load( engineSoundB64, function( buffer ) {
   engineSound.setBuffer( buffer );
   engineSound.setRefDistance( 20 );

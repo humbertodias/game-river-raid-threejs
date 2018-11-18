@@ -1,11 +1,10 @@
-#ENUNCIADO
+# ENUNCIADO
 
 Desenvolver um jogo em 3D, baseado no clássico RiverRaid de Atari.
 
 **ENTREGA: 01 Dezembro de 2016**
 
 [Itens Atendidos na avaliação](doc/river-raid.pdf)
-
 
 ## REQUISITOS
 
@@ -43,7 +42,15 @@ Para quem não conhece o jogo original, consulte a [Wikipedia] (https://en.wikip
 
 ![GamePlay](doc/game-play.gif)
 
+## Rodar localmente
 
+```
+npm i && npm start
+```
+
+No navegador
+
+http://localhost:8080/game
 
 ## DOC
 

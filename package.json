@@ -1,0 +1,31 @@
+{
+  "name": "game-river-raid-threejs",
+  "version": "1.0.0",
+  "description": "Desenvolver um jogo em 3D, baseado no clássico RiverRaid de Atari.",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/humbertodias/game-river-raid-threejs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/humbertodias/game-river-raid-threejs/issues"
+  },
+  "homepage": "https://github.com/humbertodias/game-river-raid-threejs#readme",
+  "dependencies": {
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+    "connect": "^3.6.6",
+    "gsap": "^2.0.2",
+    "howler": "^2.0.15",
+    "serve-static": "^1.13.2",
+    "three": "^0.98.0"
+  }
+}
