@@ -21,11 +21,7 @@
   },
   "homepage": "https://github.com/humbertodias/game-river-raid-threejs#readme",
   "dependencies": {
-    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
-    "connect": "^3.6.6",
     "gsap": "^2.0.2",
-    "howler": "^2.0.15",
-    "serve-static": "^1.13.2",
     "three": "^0.98.0"
   }
 }

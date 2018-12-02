@@ -162,43 +162,47 @@ camera.add( listener );
 
 var audioLoader = new THREE.AudioLoader();
 
+// onProgress callback
+function audioOnProgress ( xhr ) {
+  console.log( (xhr.loaded / xhr.total * 100) + '% loaded' );
+}
+
+// onError callback
+function audioOnError ( err ) {
+  console.log( 'An error happened' );
+}
+
 fuelSound = new THREE.PositionalAudio( listener );
-// audioLoader.load( 'sound/fuel.wav', function( buffer ) {
-audioLoader.load( fuelSoundB64, function( buffer ) {
+ audioLoader.load( 'sound/fuel.m4a', function( buffer ) {
+//audioLoader.load( fuelSoundB64, function( buffer ) {
   fuelSound.setBuffer( buffer );
   fuelSound.setRefDistance( 10 );
-});
+}, audioOnProgress, audioOnError);
 
 hitSound = new THREE.PositionalAudio( listener );
-// audioLoader.load( 'sound/hit.wav', function( buffer ) {
-audioLoader.load( hitSoundB64, function( buffer ) {
+ audioLoader.load( 'sound/hit.m4a', function( buffer ) {
+//audioLoader.load( hitSoundB64, function( buffer ) {
   hitSound.setBuffer( buffer );
   hitSound.setRefDistance( 10 );
-});
+}, audioOnProgress, audioOnError);
 
 engineSound = new THREE.PositionalAudio( listener );
 
-// audioLoader.load( 'sound/engine.au', function( buffer ) {
-//   engineSound.setBuffer( buffer );
-//   engineSound.setRefDistance( 20 );
-//   engineSound.setLoop(true)
-//   engineSound.play();
-// });
-
-
-audioLoader.load( engineSoundB64, function( buffer ) {
+audioLoader.load( 'sound/engine.m4a', function( buffer ) {
+// audioLoader.load( engineSoundB64, function( buffer ) {
   engineSound.setBuffer( buffer );
   engineSound.setRefDistance( 20 );
   engineSound.setLoop(true)
   engineSound.play();
-});
+}, audioOnProgress, audioOnError);
+
 
 engineStutteringSound = new THREE.PositionalAudio( listener );
-// audioLoader.load( 'sound/engine_stuttering.wav', function( buffer ) {
-audioLoader.load( engineStutteringSoundB64, function( buffer ) {
+audioLoader.load( 'sound/engine_stuttering.m4a', function( buffer ) {
+// audioLoader.load( engineStutteringSoundB64, function( buffer ) {
   engineStutteringSound.setBuffer( buffer );
   engineStutteringSound.setRefDistance( 10 );
-});
+}, audioOnProgress, audioOnError);
 
 // Audio
 

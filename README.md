@@ -63,12 +63,8 @@ http://localhost:8080/game
 1. [threejs.org](https://threejs.org)
 2. [greensock.com/tweenmax](https://greensock.com/tweenmax)
 
-
 ## REFERÊNCIAS
 
 1. [River Raid Manual](http://www.gamesdatabase.org/Media/SYSTEM/Atari_2600/Manual/formated/River_Raid_-_1982_-_Activision.pdf)
+
 2. [Gradient Picker Color](http://uigradients.com/#BetweenNightandDay)
-
-
-
-
