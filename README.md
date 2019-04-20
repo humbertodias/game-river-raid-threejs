@@ -34,7 +34,7 @@ A nota será dada pela soma das funcionalidades da lista abaixo que forem implem
 
 ### OBS: 
 
-Para quem não conhece o jogo original, consulte a [Wikipedia] (https://en.wikipedia.org/wiki/River_Raid) ou o [Youtube](https://www.youtube.com/watch?v=pmPjsBDN9Xw).
+Para quem não conhece o jogo original, consulte a [Wikipedia](https://en.wikipedia.org/wiki/River_Raid) ou o [Youtube](https://www.youtube.com/watch?v=pmPjsBDN9Xw).
 
 **O jogo é bem simples.**
 
