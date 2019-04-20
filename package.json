@@ -21,7 +21,8 @@
   },
   "homepage": "https://github.com/humbertodias/game-river-raid-threejs#readme",
   "dependencies": {
-    "gsap": "^2.0.2",
-    "three": "^0.98.0"
+    "gsap": "^2.1.2",
+    "three": "^0.103.0",
+    "express": "^4.16.4"
   }
 }
