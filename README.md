@@ -42,15 +42,17 @@ Para quem não conhece o jogo original, consulte a [Wikipedia](https://en.wikipe
 
 ![GamePlay](doc/game-play.gif)
 
+[Play](http://humbertodias.github.io/game-river-raid-threejs)
+
 ## Rodar localmente
 
 ```
-npm i && npm start
+python3 -m http.server
 ```
 
 No navegador
 
-http://localhost:8080/game
+http://localhost:8000/
 
 ## DOC
 
