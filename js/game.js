@@ -903,7 +903,37 @@ document.addEventListener('touchmove', handleTouchMove, false);
 document.addEventListener('mouseup', handleMouseUp, false);
 document.addEventListener('touchend', handleTouchEnd, false);
 
-loop();
+
+// Variável para controlar o AudioContext
+var audioContextResumed = false;
+
+// Adiciona um evento ao botão para retomar o AudioContext e iniciar o jogo
+document.getElementById('startButton').addEventListener('click', () => {
+    if (!audioContextResumed && THREE.AudioContext) {
+        const audioContext = THREE.AudioContext.getContext();
+        audioContext.resume().then(() => {
+            console.log('AudioContext retomado com sucesso.');
+            
+            // Inicia o som do motor
+            if (engineSound && !engineSound.isPlaying) {
+                engineSound.play();
+            }
+            
+            audioContextResumed = true;
+
+            // Remove o overlay da tela
+            const overlay = document.getElementById('startOverlay');
+            overlay.style.display = 'none'; // Esconde a overlay (ou use overlay.remove() para removê-la completamente do DOM)
+
+            // Inicia o loop do jogo
+            loop();
+        }).catch((error) => {
+            console.error('Erro ao retomar o AudioContext:', error);
+        });
+    }
+});
+
 }
+
 
 window.addEventListener('load', init, false);
